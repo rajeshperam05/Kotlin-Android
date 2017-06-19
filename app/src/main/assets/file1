@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<current>
+
+    <city id="2643743" name="London">
+        <coord lon="-0.12574" lat="51.50853"/>
+        <country>GB</country>
+        <sun rise="2013-10-08T06:13:56" set="2013-10-08T17:21:45"/>
+    </city>
+
+    <temperature value="289.54" min="289.15" max="290.15" unit="kelvin"/>
+
+    <pressure value="1025" unit="hPa"/>
+
+    <rajesh value="77" unit="%"/>
+</current>

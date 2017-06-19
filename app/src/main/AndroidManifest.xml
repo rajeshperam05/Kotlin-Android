@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swayam.kotlintestapp">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".ui.activity.AppWidgetActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget" />
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.SecondActivity" />
+        <activity android:name=".ui.activity.XmlParserActivity" />
+        <activity android:name=".ui.activity.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.WifiActivity" />
+        <activity android:name=".ui.activity.WebViewActivity" />
+        <activity android:name=".ui.activity.TextureViewActivity" />
+        <activity android:name=".ui.activity.TextToSpeachActivity" />
+        <activity android:name=".ui.activity.SQLiteDatabaseActivity" />
+        <activity android:name=".ui.activity.ContactPreferencesActivity" />
+        <activity android:name=".ui.activity.SensorsActivity" />
+        <activity android:name=".ui.activity.RSSFeedActivity" />
+        <activity android:name=".ui.activity.NotificationActivity" />
+        <activity android:name=".ui.activity.JsonParserActivity" />
+        <activity android:name=".ui.activity.SMSActivity" />
+        <activity android:name=".ui.activity.LocationActivity"></activity>
+    </application>
+
+</manifest>
